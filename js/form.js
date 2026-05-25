@@ -2,13 +2,14 @@
 //class contato
 
 class contato {
-    constructor(nome, sobrenome, email, cpf, telefone, contatarpor) {
+    constructor(nome, sobrenome, email, cpf, telefone, contatarpor, mensagem) {
         this.nome = nome;
         this.sobrenome = sobrenome;
         this.email = email;
         this.cpf = cpf;
         this.telefone = telefone;
         this.contatarpor = contatarpor;
+        this.escreva = mensagem;
     }
 }
 
@@ -20,7 +21,8 @@ function Post(form) {
             form.elements.namedItem("email").value, 
             form.elements.namedItem("cpf").value, 
             form.elements.namedItem("telefone").value, 
-            form.elements.namedItem("contato").value);
+            form.elements.namedItem("contato").value,
+            form.elements.namedItem("escreva").value);
     Enviar(data);
 }
 
@@ -35,7 +37,7 @@ function Enviar(data) {
     let cpfInput = document.getElementById("cpf"); 
     let telefoneInput = document.getElementById("telefone");
     let contatarporSelect = document.getElementById("Contatar por:");
-
+    let mensagemInput = document.getElementById("escreva");
         console.log(data);
 
 }
