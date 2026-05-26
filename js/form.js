@@ -20,6 +20,8 @@ function Post(form) {
             form.elements.namedItem("contato").value,
             form.elements.namedItem("escreva").value);
     Enviar(data);
+
+    form.reset();
 }
 
 function Enviar(data) {
