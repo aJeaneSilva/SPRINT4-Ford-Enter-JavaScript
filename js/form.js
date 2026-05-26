@@ -2,13 +2,13 @@
 //class contato
 
 class contato {
-    constructor(nome, sobrenome, email, cpf, telefone, contatarpor, mensagem) {
+    constructor(nome, sobrenome, email, cpf, telefone, tipodecontato, mensagem) {
         this.nome = nome;
         this.sobrenome = sobrenome;
         this.email = email;
         this.cpf = cpf;
         this.telefone = telefone;
-        this.contatarpor = contatarpor;
+        this.tipodecontato = tipodecontato;
         this.escreva = mensagem;
     }
 }
@@ -36,7 +36,7 @@ function Enviar(data) {
     let emailInput = document.getElementById("email");
     let cpfInput = document.getElementById("cpf"); 
     let telefoneInput = document.getElementById("telefone");
-    let contatarporSelect = document.getElementById("Contatar por:");
+    let tipodecontatoSelect = document.getElementById("tipodecontato");
     let mensagemInput = document.getElementById("escreva");
         console.log(data);
 
