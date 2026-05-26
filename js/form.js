@@ -2,11 +2,9 @@
 //class contato
 
 class contato {
-    constructor(nome, sobrenome, email, cpf, telefone, tipodecontato, mensagem) {
+    constructor(nome, email, telefone, tipodecontato, mensagem) {
         this.nome = nome;
-        this.sobrenome = sobrenome;
         this.email = email;
-        this.cpf = cpf;
         this.telefone = telefone;
         this.tipodecontato = tipodecontato;
         this.escreva = mensagem;
@@ -17,9 +15,7 @@ function Post(form) {
     event.preventDefault();
    
   let data = new contato(form.elements.namedItem("nome").value,
-            form.elements.namedItem("sobrenome").value, 
-            form.elements.namedItem("email").value, 
-            form.elements.namedItem("cpf").value, 
+            form.elements.namedItem("email").value,  
             form.elements.namedItem("telefone").value, 
             form.elements.namedItem("contato").value,
             form.elements.namedItem("escreva").value);
@@ -32,9 +28,7 @@ function Enviar(data) {
     }
 
     let nomeInput = document.getElementById("nome");
-    let sobrenomeInput = document.getElementById("sobrenome");
-    let emailInput = document.getElementById("email");
-    let cpfInput = document.getElementById("cpf"); 
+    let emailInput = document.getElementById("email"); 
     let telefoneInput = document.getElementById("telefone");
     let tipodecontatoSelect = document.getElementById("tipodecontato");
     let mensagemInput = document.getElementById("escreva");
