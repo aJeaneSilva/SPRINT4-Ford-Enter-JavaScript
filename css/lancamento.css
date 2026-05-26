@@ -11,6 +11,15 @@ ul.modelcars li {
     width: 300px;
     vertical-align: top;
 }
+.paragrafo__video {
+    display: block;
+    text-align: center;
+    font-family: 16px 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: git #10075c;
+    margin-bottom: 40px;
+}
 
 img.photocar {
     display: block;
@@ -37,7 +46,6 @@ img.photocar {
     text-align: left;
     font-size: 14px;
     color: #1351d8;
-    
 }
 .textprice {
     display: block;
