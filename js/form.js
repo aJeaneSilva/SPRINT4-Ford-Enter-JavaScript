@@ -13,6 +13,12 @@ class contato {
 
 function Post(form) {
     event.preventDefault();
+    
+  let checkboxTermos =document.getElementById("termos");
+  if (!checkboxTermos || !checkboxTermos.checked) {
+    alert("Por favor, você precisa aceitar os termos e condições para enviar o formulário.");
+        return;
+  } 
    
   let data = new contato(form.elements.namedItem("nome").value,
             form.elements.namedItem("email").value,  
