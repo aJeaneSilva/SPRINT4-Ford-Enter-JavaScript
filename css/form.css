@@ -37,12 +37,9 @@ main div {
 }
 .privacidade__texto {
     font-size: 11px;
-    color: #747373;
+    color: #555454;
     margin-left: 10px;
     padding-bottom: 20px;
-    text-decoration: none;
-}
-.privacidade__texto2 {
     text-decoration: none;
 }
 
